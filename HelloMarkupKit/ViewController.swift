@@ -7,19 +7,26 @@
 //
 
 import UIKit
+import MarkupKit
+import Alamofire
 
-class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+class ViewController: UIViewController
+{
+    @IBOutlet var greetingLabel: UILabel!
+    
+    @IBAction func sayHello(){
+        greetingLabel.text = "Hello, World"
+        title = greetingLabel.text
+        
+        navigationController?.pushViewController(ImageViewController(), animated: true)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+ 
+    //if not using storyboard, use loadView method otherwise use viewDidLoad() method.
+    override func loadView() {
+        view = LMViewBuilder.viewWithName("ViewController", owner: self, root: nil)
+        title = "RootViewController"
     }
-
 
 }
 

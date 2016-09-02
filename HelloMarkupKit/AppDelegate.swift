@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -15,8 +16,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        // it will ensure the viewcontroller is presented at startup.
+        window = UIWindow()
+        window!.rootViewController = UINavigationController(rootViewController:ViewController())
+        window!.backgroundColor = UIColor.whiteColor()
+        window!.frame = UIScreen.mainScreen().bounds
+        
+        window!.makeKeyAndVisible()
+        
         return true
+        
     }
 
     func applicationWillResignActive(application: UIApplication) {

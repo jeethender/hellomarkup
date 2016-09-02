@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<LMLayerView  layoutMarginsRelativeArrangement="false">
+    <UIImageView image="flowers" contentMode="scaleAspectFill"/>
+    
+    <LMColumnView>
+        
+        <LMRowView  layoutMargins="20">
+            <UILabel   text="topLeft" font="System 18"
+            textAlignment="center" layer.borderWidth="1" textColor="#ff0000" />
+            <LMSpacer/>
+            <UILabel  text="topRight" font="System 18"
+            textAlignment="center" layer.borderWidth="1" textColor="#ff0000" />
+        </LMRowView>
+        
+    </LMColumnView>
+    
+</LMLayerView>
