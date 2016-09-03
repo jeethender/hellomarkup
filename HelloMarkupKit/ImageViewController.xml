@@ -2,9 +2,11 @@
 
 
 <LMLayerView  layoutMarginsRelativeArrangement="false">
+    
     <UIImageView image="flowers" contentMode="scaleAspectFill"/>
     
     <LMColumnView>
+        <LMSpacer weight="0.25"/>
         
         <LMRowView  layoutMargins="20">
             <UILabel   text="topLeft" font="System 18"
@@ -14,6 +16,24 @@
             textAlignment="center" layer.borderWidth="1" textColor="#ff0000" />
         </LMRowView>
         
+        <LMSpacer/>
+        
+        <LMRowView  layoutMargins="20">
+            <UILabel   text="topLeft" font="System 18"
+            textAlignment="center" layer.borderWidth="1" textColor="#ff0000" />
+            <LMSpacer/>
+            <UILabel  text="topRight" font="System 18"
+            textAlignment="center" layer.borderWidth="1" textColor="#ff0000" />
+        </LMRowView>
+        
+        <LMSpacer/>
+        
+        <LMRowView  layoutMargins="20">
+            <UILabel   text="topLeft" font="System 18"
+            textAlignment="center" layer.borderWidth="1" textColor="#ff0000" />
+            <LMSpacer/>
+            <UILabel  text="topRight" font="System 18"
+            textAlignment="center" layer.borderWidth="1" textColor="#ff0000" />
+        </LMRowView>
     </LMColumnView>
-    
 </LMLayerView>

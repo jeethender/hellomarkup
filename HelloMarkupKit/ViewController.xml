@@ -3,6 +3,7 @@
 
 <!--If not using storyboards use <LMColumnView> otherwise use <root>  -->
 <LMColumnView backgroundColor="#ffffff">
+    
    <LMSpacer weight="1"/>
 
      <UILabel id="greetingLabel" textAlignment="center"/>
